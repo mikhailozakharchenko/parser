@@ -1,0 +1,289 @@
+
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Звіт по цінах</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1 { color: #2c3e50; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ccc; padding: 8px; text-align: right; }
+            th { background-color: #f4f4f4; text-align: center; }
+            tr:nth-child(even) { background-color: #fafafa; }
+            .positive { color: green; font-weight: bold; }
+            .negative { color: red; font-weight: bold; }
+        </style>
+    </head>
+    <body>
+        <h1>Звіт по цінах</h1>
+        <p>Файл створено на основі бази <b>prices.db</b>. Ви можете ділитися цим HTML‑файлом із друзями.</p>
+        <table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>product_id</th>
+      <th>product_name</th>
+      <th>01/01/2026</th>
+      <th>01/02/2026</th>
+      <th>18/02/2026</th>
+      <th>Зміна з останньої дати (%)</th>
+      <th>Зміна ціни від початку року (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>100730</td>
+      <td>Кефір 0,9 кг Яготинський 2,5%</td>
+      <td>46.20</td>
+      <td>55.90</td>
+      <td>55.90</td>
+      <td>0.00%</td>
+      <td><span class="positive">↑ 21.00%</span></td>
+    </tr>
+    <tr>
+      <td>104293</td>
+      <td>Сіль 1 кг Своя Лінія морська харчова осідна помел №1</td>
+      <td>23.90</td>
+      <td>23.90</td>
+      <td>23.90</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>110108</td>
+      <td>Мак.вир. 1 кг Розумний вибір Мушля</td>
+      <td>31.20</td>
+      <td>31.20</td>
+      <td>31.20</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>127160</td>
+      <td>Сир кисломолочний 200г Молокія 9,0%</td>
+      <td>54.90</td>
+      <td>46.50</td>
+      <td>46.50</td>
+      <td>0.00%</td>
+      <td><span class="negative">↓ -15.30%</span></td>
+    </tr>
+    <tr>
+      <td>128576</td>
+      <td>Хліб 0,5 кг Кристинопіль Хліб Монастирський нарізаний</td>
+      <td>24.90</td>
+      <td>24.90</td>
+      <td>24.90</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>129026</td>
+      <td>Вітaмінний пучок 100г (кpіп, пeтpушкa, цибуля зeлeнa) 1 гат</td>
+      <td>33.00</td>
+      <td>52.90</td>
+      <td>58.90</td>
+      <td><span class="positive">↑ 11.34%</span></td>
+      <td><span class="positive">↑ 78.48%</span></td>
+    </tr>
+    <tr>
+      <td>130982</td>
+      <td>Сметана 400г Галичанська 15%</td>
+      <td>53.90</td>
+      <td>53.90</td>
+      <td>53.90</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>135089</td>
+      <td>Молоко 0,9 кг Своя Лінія ультрапастеризоване 1%</td>
+      <td>36.90</td>
+      <td>43.50</td>
+      <td>43.50</td>
+      <td>0.00%</td>
+      <td><span class="positive">↑ 17.89%</span></td>
+    </tr>
+    <tr>
+      <td>138357</td>
+      <td>Олія 0,9л Своя лінія соняшникова рафінована</td>
+      <td>75.90</td>
+      <td>75.90</td>
+      <td>75.90</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>147246</td>
+      <td>Яйце куряче 10 шт Своя лінія вища категорія фас</td>
+      <td>79.70</td>
+      <td>79.70</td>
+      <td>79.70</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>148983</td>
+      <td>Кава 240г Кава зі Львова Львівська натуральна смажена мелена</td>
+      <td>235.30</td>
+      <td>250.90</td>
+      <td>207.30</td>
+      <td><span class="negative">↓ -17.38%</span></td>
+      <td><span class="negative">↓ -11.90%</span></td>
+    </tr>
+    <tr>
+      <td>150394</td>
+      <td>Сир твердий 160г Свoя лінія Гoлландський 45%</td>
+      <td>89.20</td>
+      <td>89.20</td>
+      <td>59.90</td>
+      <td><span class="negative">↓ -32.85%</span></td>
+      <td><span class="negative">↓ -32.85%</span></td>
+    </tr>
+    <tr>
+      <td>1580</td>
+      <td>Томати тепличні</td>
+      <td>129.89</td>
+      <td>149.89</td>
+      <td>149.89</td>
+      <td>0.00%</td>
+      <td><span class="positive">↑ 15.40%</span></td>
+    </tr>
+    <tr>
+      <td>15844</td>
+      <td>Лимон</td>
+      <td>84.95</td>
+      <td>119.80</td>
+      <td>119.90</td>
+      <td><span class="positive">↑ 0.08%</span></td>
+      <td><span class="positive">↑ 41.14%</span></td>
+    </tr>
+    <tr>
+      <td>16088</td>
+      <td>Картопля</td>
+      <td>9.99</td>
+      <td>14.29</td>
+      <td>14.29</td>
+      <td>0.00%</td>
+      <td><span class="positive">↑ 43.04%</span></td>
+    </tr>
+    <tr>
+      <td>16145</td>
+      <td>Огірки</td>
+      <td>129.95</td>
+      <td>179.89</td>
+      <td>199.89</td>
+      <td><span class="positive">↑ 11.12%</span></td>
+      <td><span class="positive">↑ 53.82%</span></td>
+    </tr>
+    <tr>
+      <td>16556</td>
+      <td>Цибуля Ріпчаста</td>
+      <td>6.35</td>
+      <td>8.45</td>
+      <td>8.45</td>
+      <td>0.00%</td>
+      <td><span class="positive">↑ 33.07%</span></td>
+    </tr>
+    <tr>
+      <td>169326</td>
+      <td>Масло 180 г Молокія солодковершкове Экстра 82%</td>
+      <td>127.30</td>
+      <td>127.30</td>
+      <td>108.80</td>
+      <td><span class="negative">↓ -14.53%</span></td>
+      <td><span class="negative">↓ -14.53%</span></td>
+    </tr>
+    <tr>
+      <td>1700</td>
+      <td>Цукор 1 кг</td>
+      <td>28.50</td>
+      <td>25.90</td>
+      <td>25.90</td>
+      <td>0.00%</td>
+      <td><span class="negative">↓ -9.12%</span></td>
+    </tr>
+    <tr>
+      <td>182932</td>
+      <td>Печінка куряча Наша Ряба охолоджена 700 г</td>
+      <td>94.50</td>
+      <td>84.90</td>
+      <td>88.30</td>
+      <td><span class="positive">↑ 4.00%</span></td>
+      <td><span class="negative">↓ -6.56%</span></td>
+    </tr>
+    <tr>
+      <td>22168</td>
+      <td>Морква</td>
+      <td>9.29</td>
+      <td>10.89</td>
+      <td>10.89</td>
+      <td>0.00%</td>
+      <td><span class="positive">↑ 17.22%</span></td>
+    </tr>
+    <tr>
+      <td>22401</td>
+      <td>Перець солодкий червоний</td>
+      <td>225.95</td>
+      <td>209.95</td>
+      <td>224.95</td>
+      <td><span class="positive">↑ 7.14%</span></td>
+      <td><span class="negative">↓ -0.44%</span></td>
+    </tr>
+    <tr>
+      <td>22934</td>
+      <td>Тушка куряча Наша Ряба охолоджена вакумна упаковка</td>
+      <td>121.89</td>
+      <td>113.89</td>
+      <td>111.89</td>
+      <td><span class="negative">↓ -1.76%</span></td>
+      <td><span class="negative">↓ -8.20%</span></td>
+    </tr>
+    <tr>
+      <td>26301</td>
+      <td>Буряк 1 гат</td>
+      <td>7.89</td>
+      <td>8.49</td>
+      <td>8.49</td>
+      <td>0.00%</td>
+      <td><span class="positive">↑ 7.60%</span></td>
+    </tr>
+    <tr>
+      <td>63024</td>
+      <td>Крупа 1 кг Розумний вибір гречана</td>
+      <td>44.90</td>
+      <td>44.90</td>
+      <td>47.90</td>
+      <td><span class="positive">↑ 6.68%</span></td>
+      <td><span class="positive">↑ 6.68%</span></td>
+    </tr>
+    <tr>
+      <td>63121</td>
+      <td>Крупа 1 кг Розумний вибір рис довгозернистий шлiфований</td>
+      <td>49.50</td>
+      <td>39.90</td>
+      <td>46.90</td>
+      <td><span class="positive">↑ 17.54%</span></td>
+      <td><span class="negative">↓ -5.25%</span></td>
+    </tr>
+    <tr>
+      <td>80816</td>
+      <td>Чай 100г De Luxe Foods&Goods Selected чорний цейлонський середній лист з ароматом бергамоту</td>
+      <td>82.80</td>
+      <td>82.80</td>
+      <td>82.80</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>AVG</td>
+      <td>Середнє по всіх товарах</td>
+      <td>71.80</td>
+      <td>75.91</td>
+      <td>74.47</td>
+      <td><span class="negative">↓ -0.32%</span></td>
+      <td><span class="positive">↑ 8.56%</span></td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    
